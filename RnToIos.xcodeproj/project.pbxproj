@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322C920F9B2713506A75C126 /* libPods-RnToIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8ABF633CC4EF177558019F /* libPods-RnToIos.a */; };
 		4B40D0AD1F58F59B00B44B05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B40D0AC1F58F59B00B44B05 /* main.m */; };
 		4B40D0B01F58F59B00B44B05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B40D0AF1F58F59B00B44B05 /* AppDelegate.m */; };
 		4B40D0B31F58F59B00B44B05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B40D0B21F58F59B00B44B05 /* ViewController.m */; };
@@ -51,6 +52,13 @@
 		4B40D0CC1F58F59B00B44B05 /* RnToIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnToIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B40D0D01F58F59B00B44B05 /* RnToIosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RnToIosUITests.m; sourceTree = "<group>"; };
 		4B40D0D21F58F59B00B44B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B40D0DE1F58F8AD00B44B05 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		4B40D0E01F58F8B700B44B05 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		4B40D0E21F58F8D300B44B05 /* libReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReact.a; path = "Pods/../build/Debug-iphoneos/React/libReact.a"; sourceTree = "<group>"; };
+		4B40D0E31F58F8D300B44B05 /* libYoga.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYoga.a; path = "../../../../Library/Developer/Xcode/DerivedData/RnToIos-czuulnmdovzanygffgqyatofkeeo/Build/Products/Debug-iphonesimulator/Yoga/libYoga.a"; sourceTree = "<group>"; };
+		9B91E42B0D621FBB442DE2EF /* Pods-RnToIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnToIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-RnToIos/Pods-RnToIos.release.xcconfig"; sourceTree = "<group>"; };
+		AF8ABF633CC4EF177558019F /* libPods-RnToIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnToIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D12FC9D722235241903FD6 /* Pods-RnToIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnToIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RnToIos/Pods-RnToIos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322C920F9B2713506A75C126 /* libPods-RnToIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,8 @@
 				4B40D0C41F58F59B00B44B05 /* RnToIosTests */,
 				4B40D0CF1F58F59B00B44B05 /* RnToIosUITests */,
 				4B40D0A91F58F59B00B44B05 /* Products */,
+				B72C93C37C247AF4AA12B05C /* Pods */,
+				B2423227DB8C5075809ED339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +151,27 @@
 			path = RnToIosUITests;
 			sourceTree = "<group>";
 		};
+		B2423227DB8C5075809ED339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B40D0E21F58F8D300B44B05 /* libReact.a */,
+				4B40D0E31F58F8D300B44B05 /* libYoga.a */,
+				4B40D0E01F58F8B700B44B05 /* libstdc++.tbd */,
+				4B40D0DE1F58F8AD00B44B05 /* libz.1.1.3.tbd */,
+				AF8ABF633CC4EF177558019F /* libPods-RnToIos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72C93C37C247AF4AA12B05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2D12FC9D722235241903FD6 /* Pods-RnToIos.debug.xcconfig */,
+				9B91E42B0D621FBB442DE2EF /* Pods-RnToIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B40D0D51F58F59B00B44B05 /* Build configuration list for PBXNativeTarget "RnToIos" */;
 			buildPhases = (
+				2ED54BDD47F269192C5E8EF9 /* [CP] Check Pods Manifest.lock */,
 				4B40D0A41F58F59B00B44B05 /* Sources */,
 				4B40D0A51F58F59B00B44B05 /* Frameworks */,
 				4B40D0A61F58F59B00B44B05 /* Resources */,
+				81190542CF639595799F8D9B /* [CP] Embed Pods Frameworks */,
+				B05F957A39825FF30E164609 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +302,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ED54BDD47F269192C5E8EF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81190542CF639595799F8D9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RnToIos/Pods-RnToIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05F957A39825FF30E164609 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RnToIos/Pods-RnToIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B40D0A41F58F59B00B44B05 /* Sources */ = {
@@ -424,10 +507,22 @@
 		};
 		4B40D0D61F58F59B00B44B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D12FC9D722235241903FD6 /* Pods-RnToIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"$(SRCROOT)/react/node_modules/react-native/React/**",
+				);
 				INFOPLIST_FILE = RnToIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/React",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RnToIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -435,10 +530,22 @@
 		};
 		4B40D0D71F58F59B00B44B05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B91E42B0D621FBB442DE2EF /* Pods-RnToIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"$(SRCROOT)/react/node_modules/react-native/React/**",
+				);
 				INFOPLIST_FILE = RnToIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/React",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RnToIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -509,6 +616,7 @@
 				4B40D0D71F58F59B00B44B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B40D0D81F58F59B00B44B05 /* Build configuration list for PBXNativeTarget "RnToIosTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +625,7 @@
 				4B40D0DA1F58F59B00B44B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B40D0DB1F58F59B00B44B05 /* Build configuration list for PBXNativeTarget "RnToIosUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +634,7 @@
 				4B40D0DD1F58F59B00B44B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

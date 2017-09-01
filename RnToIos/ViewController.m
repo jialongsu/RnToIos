@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <React/RCTRootView.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString * strUrl = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
+    NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
+    
+    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                         moduleName:@"MyReactNativeApp"
+                                                  initialProperties:nil
+                                                      launchOptions:nil];
+    self.view = rootView;
 }
 
 

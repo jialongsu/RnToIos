@@ -1,0 +1,42 @@
+PODS:
+  - React/BatchedBridge (0.47.2):
+    - React/Core
+    - React/cxxreact_legacy
+  - React/Core (0.47.2):
+    - Yoga (= 0.47.2.React)
+  - React/cxxreact_legacy (0.47.2):
+    - React/jschelpers_legacy
+  - React/DevSupport (0.47.2):
+    - React/Core
+    - React/RCTWebSocket
+  - React/jschelpers_legacy (0.47.2)
+  - React/RCTNetwork (0.47.2):
+    - React/Core
+  - React/RCTText (0.47.2):
+    - React/Core
+  - React/RCTWebSocket (0.47.2):
+    - React/Core
+  - Yoga (0.47.2.React)
+
+DEPENDENCIES:
+  - React/BatchedBridge (from `./react/node_modules/react-native`)
+  - React/Core (from `./react/node_modules/react-native`)
+  - React/DevSupport (from `./react/node_modules/react-native`)
+  - React/RCTNetwork (from `./react/node_modules/react-native`)
+  - React/RCTText (from `./react/node_modules/react-native`)
+  - React/RCTWebSocket (from `./react/node_modules/react-native`)
+  - Yoga (from `./react/node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ./react/node_modules/react-native
+  Yoga:
+    :path: ./react/node_modules/react-native/ReactCommon/yoga
+
+SPEC CHECKSUMS:
+  React: fbe1a006550fb55871cb377ba7741f5d1cfff733
+  Yoga: ff8531e8cf9f7ec92a75dd44286a68c4a084c507
+
+PODFILE CHECKSUM: 090cf815e7f459c53a088a78b1bb53789f1f2e40
+
+COCOAPODS: 1.2.1
